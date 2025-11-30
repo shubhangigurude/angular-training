@@ -1,0 +1,22 @@
+// Card hover effects
+.hover-shadow {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+// Smooth transitions
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+// Responsive adjustments
+@media (max-width: 576px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="verify-email-container">
+    <ng-container *ngIf="verifying">
+        <p>Verifying your email, please wait...</p>
+    </ng-container>
+    <ng-container *ngIf="!verifying && verified">
+        <h2>Email Verified!</h2>
+        <p>Your email has been successfully verified. You can now sign in.</p>
+        <a routerLink="/sign-in" class="btn btn-primary">Go to Sign In</a>
+    </ng-container>
+    <ng-container *ngIf="!verifying && alreadyVerified">
+        <h2>Email Already Verified</h2>
+        <p>This email address has already been verified. You can sign in.</p>
+        <a routerLink="/sign-in" class="btn btn-primary">Go to Sign In</a>
+    </ng-container>
+    <ng-container *ngIf="!verifying && expired">
+        <h2>Verification Link Expired</h2>
+        <p>Your verification link has expired. Please register again to receive a new verification email.</p>
+        <a routerLink="/register" class="btn btn-secondary">Register Again</a>
+    </ng-container>
+    <ng-container *ngIf="!verifying && !verified && !alreadyVerified && !expired && error">
+        <h2>Verification Failed</h2>
+        <p>{{ error }}</p>
+        <a routerLink="/register" class="btn btn-secondary">Try Again</a>
+    </ng-container>
+</div>

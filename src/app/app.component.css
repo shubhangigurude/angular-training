@@ -1,0 +1,14 @@
+.menu button{
+  display: inline-block;
+  background-color: black;
+  color: aqua;
+  padding: 10px;
+  justify-items: left;
+ transition: left 0.4s ease;
+
+}
+.FirstPage{
+  background-image:url("/src/assets/images/app.jpg");
+
+  background-color: white;
+}

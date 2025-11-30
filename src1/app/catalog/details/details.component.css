@@ -1,0 +1,63 @@
+.expensive {
+  color: red;
+  font-weight: bold;
+}
+.affordable {
+  color: green;
+}
+button {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.25s ease-in-out;
+}
+
+/* Add to cart */
+button:nth-child(1) {
+  background-color: #28a745;
+  color: white;
+}
+button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+/* Update */
+button:nth-child(2) {
+  background-color: #007bff;
+  color: white;
+}
+button:nth-child(2):hover {
+  background-color: #0069d9;
+}
+
+/* Delete */
+button:nth-child(3) {
+  background-color: #dc3545;
+  color: white;
+}
+button:nth-child(3):hover {
+  background-color: #c82333;
+}
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+  transition: .25s;
+}
+
+.add    { background: #28a745; }
+.add:hover { background: #218838; }
+
+.update { background: #007bff; }
+.update:hover { background: #0069d9; }
+
+.remove { background: #dc3545; }
+.remove:hover { background: #c82333; }

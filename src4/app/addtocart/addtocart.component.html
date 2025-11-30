@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h3>Add to Cart</h3>
+
+  <form #cartForm="ngForm" (ngSubmit)="addToCart(cartForm)">
+    <div class="mb-3">
+      <label>Product ID</label>
+      <input type="number" class="form-control" name="productId" [(ngModel)]="currentProductId" required />
+    </div>
+
+    <div class="mb-3">
+      <label>Title</label>
+      <input type="text" class="form-control" name="title" ngModel required />
+    </div>
+
+    <div class="mb-3">
+      <label>Price</label>
+      <input type="number" class="form-control" name="price" ngModel required />
+    </div>
+
+    <div class="mb-3">
+      <label>Quantity</label>
+      <input type="number" class="form-control" name="quantity" ngModel required min="1" />
+    </div>
+
+    <div class="mb-3">
+      <label>Image URL</label>
+      <input type="text" class="form-control" name="imageUrl" ngModel />
+    </div>
+
+    <button class="btn btn-primary" [disabled]="!cartForm.valid">Add to Cart</button>
+  </form>
+</div>
